@@ -1,4 +1,15 @@
-# Fast Global Registration
+# Fast Global Registration C#
+
+This is a fork of the Fast Global Registration archive (https://github.com/isl-org/FastGlobalRegistration), to include a C# port of the algorithm.
+
+This will not be maintained, but is available to anyone who would like to use it (under the original license). 
+
+This change does introduce some dependencies:
+- Unity (the reason for porting it to C#). In particular the Matrix and Vector functions from Unity will need to be replaced if you use this on other platforms.
+- KdTree. https://github.com/codeandcats/KdTree. This is a somewhat slower replacement for flann used for nearest neighbour searches.
+- MathNet. https://github.com/mathnet/mathnet-numerics. This handles the more complex matrix and vector operations required.
+
+Thanks to the original authors for sharing their code.
 
 ## Introduction
 
